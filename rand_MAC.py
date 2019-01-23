@@ -19,9 +19,12 @@ def rand_MAC():
     # accumulate 6 iterations of hex number in array
     # concat array elements and return
     # THIS DOESN"T WORK YET, PLZ FIX
-    arr = [0]
+    arr = []
     for i in range(6):
-        arr.append(random.randint(1,16)
+        arr.append(random.randint(1,255)
+    #debugging
+    print(arr)
+    print(":".join(str(arr))
     return ":".join(str(arr))
 
 # Main logic - Check if no arguments were passed, and output an ipv4 address (default)
