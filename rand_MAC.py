@@ -18,6 +18,7 @@ def rand_MAC():
     # for loop creating hex mumber using randint(1,0xff)
     # accumulate 6 iterations of hex number in array
     # concat array elements and return
+    # THIS DOESN"T WORK YET, PLZ FIX
     arr = [0]
     for i in range(6):
         arr.append(random.randint(1,16)
