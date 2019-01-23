@@ -13,10 +13,10 @@ def rand_MAC():
     # possibly a = map(hex, xrange(6))
     arr = []
     for i in range(6):
-        arr.append(random.randint(1,255)
+        arr.append(random.randint(1,255))
     #debugging
     print(arr)
-    print(":".join(str(arr))
+    print(":".join(str(arr)))
     return 
 
 # CLI arguments
