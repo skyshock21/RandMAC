@@ -10,7 +10,10 @@ def rand_MAC():
     # accumulate 6 iterations of hex number in array
     # concat array elements and return
     # THIS DOESN"T WORK YET, PLZ FIX
-    # possibly a = map(hex, xrange(6))
+    # possibly a = ":".join([hex(random.randrange(0,255)) for i in range(6)])
+    # a = [hex(random.randrange(0,255)) for i in range(6)]
+    # print ":".join(map(lambda x:"%02x" % x, a))
+    # print ":".join([hex(random.randrange(0,255)) for i in range(6)]
     arr = []
     for i in range(6):
         arr.append(random.randint(1,255))
