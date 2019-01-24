@@ -4,23 +4,13 @@
 
 import random, argparse
 
-# Function Def
+# Function Defs
 def rand_MAC():
-    # for loop creating hex mumber list using randint(1,0xff)
-    # accumulate 6 iterations of hex number in array
-    # concat array elements and return
-    # THIS DOESN"T WORK YET, PLZ FIX
-    # possibly a = ":".join([hex(random.randrange(0,255)) for i in range(6)])
-    # a = [hex(random.randrange(0,255)) for i in range(6)]
-    # print ":".join(map(lambda x:"%02x" % x, a))
-    # print ":".join([hex(random.randrange(0,255)) for i in range(6)]
-    arr = []
-    for i in range(6):
-        arr.append(random.randint(1,255))
-    #debugging
-    print(arr)
-    print(":".join(str(arr)))
-    return 
+    # create random int value from 00-ff, format using Hex format spec
+    # loop 6 times and accumulate each iteration into an array
+    # join array elements into a string by a ":" character, and return array as string
+    a = ":".join([format(random.randrange(0x00,0xff), '02x') for i in range(6)])
+    return a
 
 # CLI arguments
 ex = '''example:
