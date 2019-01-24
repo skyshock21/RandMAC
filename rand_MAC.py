@@ -21,7 +21,7 @@ parser = argparse.ArgumentParser(prog='rand_MAC',
                                 epilog=ex,
                                 formatter_class=argparse.RawDescriptionHelpFormatter,
                                 )
-parser.add_argument("-m", "--MAC", dest='func', action="store_const", const=rand_MAC)
+parser.add_argument("-m", "--MAC", help="<optional>", dest='func', action="store_const", const=rand_MAC)
 parser.add_argument("-n", "--number", type=int, help="output multiple MACs", default=1)
 parser.set_defaults(func=rand_MAC)
 args = parser.parse_args()
