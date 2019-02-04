@@ -2,7 +2,7 @@
 #
 # rand_MAC.py
 
-import random, argparse
+import random, argparse, sys
 
 # Function Defs
 def rand_MAC():
@@ -31,4 +31,4 @@ def main():
           print(args.func())
 
 if __name__ == "__main__":
-    main()
+    sys.exit( main() )
